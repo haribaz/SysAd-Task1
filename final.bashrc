@@ -8,6 +8,7 @@ chmod +x mt3.sh
 chmod +x mt4.sh
 chmod +x mt5.sh
 chmod +x hm1.sh
+chmod +x hm2.sh
 
 
 alias userGenerate="./mt1.sh"
@@ -29,5 +30,8 @@ record $var
 
 alias finalattendance="sudo ./hm1.sh"
 finalattendance
+
+alias nearest="sudo ./hm2.sh"
+nearest
 
 
