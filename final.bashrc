@@ -32,6 +32,6 @@ alias finalattendance="sudo ./hm1.sh"
 finalattendance
 
 alias nearest="sudo ./hm2.sh"
-nearest
+echo "0 12 * * * nearest"|crontab -
 
 
