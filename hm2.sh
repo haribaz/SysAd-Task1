@@ -1,5 +1,9 @@
 #!/bin/bash
 
+> /home/ChiefCommander/temp
+> /home/ChiefCommander/distfile
+> /home/ChiefCommander/nearest10
+
 D=$(date +%F)
 
 join -1 2 -2 2 position.log attendance.log|awk '{print $1,$2,$3,$4,$6}'|grep "Army.*"|grep "YES"|sed -n "/2020-04-11/,/$D/p">/home/ChiefCommander/temp
