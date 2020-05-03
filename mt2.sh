@@ -24,28 +24,34 @@ sudo chgrp group1 /home/NavyMarshal
 
 sudo chgrp group1 /home/AirForceChief
 
-for var in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50
+var=1
+
+while [ $var -lt 51 ]
 do
    sudo chgrp group2 /home/Army$var
+   var='expr $var + 1'
 done
 
-for var in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50
+while [ $var -lt 51 ]
 do
    sudo chgrp group3 /home/Navy$var
+   var='expr $var + 1'
 done
 
-for var in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50
+while [ $var -lt 51 ]
 do
    sudo chgrp group4 /home/AirForce$var
+   var='expr $var + 1'
 done
 
 #since group permissions for write are not given by default
 
-for var in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50
+while [ $var -lt 51 ]
 do
    sudo chmod g+w /home/Army$var
    sudo chmod g+w /home/Navy$var
    sudo chmod g+w /home/AirForce$var
+   var='expr $var + 1'
 done
 
 
